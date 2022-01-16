@@ -22,6 +22,9 @@
     "intro": {
       "type": "richtext",
       "required": true
+    },
+    "image": {
+      "type": "json"
     }
   }
 }
