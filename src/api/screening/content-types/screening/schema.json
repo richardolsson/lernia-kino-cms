@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "screenings",
+  "info": {
+    "singularName": "screening",
+    "pluralName": "screenings",
+    "displayName": "Screening"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "start_time": {
+      "type": "datetime",
+      "required": true
+    },
+    "movie": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::movie.movie",
+      "inversedBy": "screenings"
+    },
+    "room": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
