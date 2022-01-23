@@ -25,6 +25,12 @@
     },
     "image": {
       "type": "json"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review",
+      "mappedBy": "movie"
     }
   }
 }
